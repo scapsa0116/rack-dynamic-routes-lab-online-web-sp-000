@@ -7,7 +7,7 @@ class Application
     
     if req.path=="/item"
       items = @@item.map do |i|
-        i.name == name
+        i.name == item_name
       resp.write "You requested the songs"
       resp.statuse = 400
     else
