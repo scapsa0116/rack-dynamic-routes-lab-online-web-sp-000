@@ -8,7 +8,8 @@ class Application
     if req.path=="/item"
       items = @@item.map do |i|
         i.name == item_name
-      resp.write "You requested the songs"
+        if item
+      resp.write item.price
       resp.statuse = 400
     else
       resp.write "Route not found"
