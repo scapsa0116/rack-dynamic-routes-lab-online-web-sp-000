@@ -10,7 +10,7 @@ class Application
         i.name == item_name
         if item
       resp.write item.price
-      resp.statuse = 400
+    
     else
       resp.write "Route not found"
       resp.status = 404 
